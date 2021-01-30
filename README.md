@@ -59,6 +59,17 @@ LOCAL SETUP
 
 mongodb compass
 [admin@localhost Downloads]$ sudo dnf localinstall 'mongodb-compass-1.25.0.x86_64 (1).rpm'
+$mongo
+$test
+
+#add .env folder with
+MONGODB_URI=mongodb://localhost:27017
+PORT=
+
+#start up nodeman using
+$npm run dev
+
+
 
 ###
 
