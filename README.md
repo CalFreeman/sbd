@@ -49,10 +49,10 @@ mongoose-unique-validator is a plugin which
 bcrypt installation issue
 [admin@localhost hbl-backend]$ sudo npm install --unsafe-perm -g bcrypt
 
-mongodb installation
-# sudo yum install mongodb-org
-# sudo systemctl start mongod
-# sudo systemctl enable mongod
+#mongodb installation
+sudo yum install mongodb-org
+sudo systemctl start mongod
+sudo systemctl enable mongod
 
 ###
 LOCAL SETUP
