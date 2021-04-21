@@ -1,7 +1,10 @@
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config()
-}
-  
+//dotenv module to load env vars. 
+//if (process.env.NODE_ENV !== 'production') {
+//    require('dotenv').config()
+//}
+require('dotenv').config()
+
+//env vars are passed in from .env file at the root utilizing dotenv module
 let PORT = process.env.PORT
 let MONGODB_URI = process.env.MONGODB_URI
   

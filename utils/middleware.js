@@ -1,5 +1,7 @@
 const logger = require('./logger')
 
+//custom middleware that prints information about every request that is
+//sent to the server
 const requestLogger = (request, response, next) => {
   logger.info('Method:', request.method)
   logger.info('Path:  ', request.path)
@@ -9,7 +11,7 @@ const requestLogger = (request, response, next) => {
 }
 
 const unknownEndpoint = (request, response) => {
-  response.status(404).send({ error: 'unknown endpoint' })
+  response.status(404).send({ error: 'uunknown endpoint' })
 }
 
 const errorHandler = (error, request, response, next) => {

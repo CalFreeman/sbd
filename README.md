@@ -69,6 +69,11 @@ PORT=
 #start up nodeman using
 $npm run dev
 
+###
+POSTMAN setup
+https://askubuntu.com/questions/1041751/cant-get-postman-installed-and-working-on-ubuntu
+
+
 
 
 ###
