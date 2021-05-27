@@ -25,7 +25,7 @@ userSchema.set('toJSON', {
       delete returnedObject.__v
       delete returnedObject.passwordHash
     }
-  })
+})
   
   userSchema.plugin(uniqueValidator)
   

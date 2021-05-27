@@ -85,3 +85,11 @@ npm install morgan
 https://github.com/expressjs/morgan#creating-new-tokens
 
 2) add variables for dotenv -> utils/config.js 
+
+##MONGODB setup for test
+db.createCollection('users');
+db.users.insertOne({ username: 'caleb, password: 'freeman'});
+
+##
+ sudo npm install --save-dev jest
+ sudo npm install --save-dev cross-env
