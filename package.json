@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+<<<<<<< HEAD
     "dev": "cross-env NODE_ENV=development nodemon index.js",
+=======
+    "dev": "NODE_ENV=development && nodemon index.js",
+>>>>>>> 3ce890de7012863fa6f5330f565c26ffad56b1d8
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "caleb freeman",
