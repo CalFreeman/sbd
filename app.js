@@ -14,13 +14,15 @@ const loginRouter = require('./controllers/login')
 logger.info('connecting to', config.MONGODB_URI)
 
 mongoose
-  .connect(config.MONGODB_URI, { useNewUrlParser: true })
+  .connect(config.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
   .then(() => {
     logger.info('connected to MongoDB')
     server.Ping();
   })
   .catch(error => {
-    logger.error('error connection to MongoDB:', error.message)
+    console.log('MONGODB_URI:', process.env.MONGODB_URI);
+    console.log('PORT:', process.env.PORT);
+    logger.error('error connection to MongoDB:', error.message, ';' ,error.info)
   })
 app.use(middleware.tokenExtractor)
 

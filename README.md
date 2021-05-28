@@ -13,6 +13,13 @@
 │   ├── logger.js
 │   └── middleware.js
 │   ├─────
+##TODO
+--App.js Mongoose connection error 
+    "logger.error('error connection to MongoDB:', error.message)"
+--Package.json 
+    "add NODE_ENV to start script, Xref /utils/config.js call"
+--FSO-part3.d Validation and ESLint
+--FSO-part4.b Testing the backend
 
 ###SETUP
 express for http library
