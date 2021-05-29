@@ -19,6 +19,7 @@
 --Package.json 
     "add NODE_ENV to start script, Xref /utils/config.js call"
 --FSO-part3.d Validation and ESLint
+    --implement serverside login
 --FSO-part4.b Testing the backend
     --Testing /api/login requires bearer token included in header
 
