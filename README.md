@@ -13,7 +13,8 @@
 │   ├── logger.js
 │   └── middleware.js
 │   ├─────
-##TODO
+###
+#TODO
 --App.js Mongoose connection error 
     "logger.error('error connection to MongoDB:', error.message)"
 --Package.json 
@@ -22,8 +23,17 @@
     --implement serverside login
 --FSO-part4.b Testing the backend
     --Testing /api/login requires bearer token included in header
+    --testing for adding a new blog, also write test to ensure adding a blog fails with proper status code of 401 Unauthorized if a token is not provided.
+    https://github.com/visionmedia/supertest/issues/398
+--npm install morgan
+    --configure morgan so it shows the data sent in HTTP POST requests:
+    --https://github.com/expressjs/morgan#creating-new-tokens
+--identity of a signed in user should be saved as httOnly cookies,  so that Javascript could not have any access the token.
+    https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies
 
-###SETUP
+
+###
+#SETUP
 express for http library
 [admin@localhost hbl-backend]$sudo npm install express
 
@@ -88,10 +98,6 @@ https://askubuntu.com/questions/1041751/cant-get-postman-installed-and-working-o
 ###
 
 ###TODO###
-1)
-npm install morgan
--configure morgan so it shows the data sent in HTTP POST requests:
-https://github.com/expressjs/morgan#creating-new-tokens
 
 2) add variables for dotenv -> utils/config.js 
 
