@@ -15,6 +15,7 @@
 │   ├─────
 ###
 #TODO
+--make file tree display in GIt
 --App.js Mongoose connection error 
     "logger.error('error connection to MongoDB:', error.message)"
 --Package.json 
