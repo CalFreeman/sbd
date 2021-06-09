@@ -15,6 +15,9 @@
 │   ├─────
 ###
 #TODO
+--Added ESlint, need to resolve ERRORS, implement 
+    -javascript style guide (https://github.com/airbnb/javascript)
+    -ESlint config (https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 --make file tree display in GIt
 --App.js Mongoose connection error 
     "logger.error('error connection to MongoDB:', error.message)"
