@@ -87,7 +87,7 @@ $test
 
 #add .env folder with
 MONGODB_URI=mongodb://localhost:27017
-PORT=
+PORT=3003
 
 #start up nodeman using
 $npm run dev
