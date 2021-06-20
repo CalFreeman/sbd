@@ -112,3 +112,7 @@ db.users.insertOne({ username: 'caleb, password: 'freeman'});
 ##
  sudo npm install --save-dev jest
  sudo npm install --save-dev cross-env
+
+###
+#Notes
+-blog serveriong data to login page
