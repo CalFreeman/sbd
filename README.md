@@ -34,6 +34,7 @@
     --https://github.com/expressjs/morgan#creating-new-tokens
 --identity of a signed in user should be saved as httOnly cookies,  so that Javascript could not have any access the token.
     https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies
+### -----------------------------
 
 
 ###
@@ -76,6 +77,7 @@ bcrypt installation issue
 sudo yum install mongodb-org
 sudo systemctl start mongod
 sudo systemctl enable mongod
+### -----------------------------
 
 ###
 LOCAL SETUP
@@ -91,15 +93,24 @@ PORT=3003
 
 #start up nodeman using
 $npm run dev
+### -----------------------------
 
 ###
 POSTMAN setup
 https://askubuntu.com/questions/1041751/cant-get-postman-installed-and-working-on-ubuntu
-
-
-
+### -----------------------------
 
 ###
+DOCKER setup
+--net 
+
+$docker run -p27017:27017 -d \
+-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
+-e MONGO_INITDB_ROOT_PASSWORD=secret \
+--name mongodb \
+--net mongo-network \
+mongo
+### -----------------------------
 
 ###TODO###
 
