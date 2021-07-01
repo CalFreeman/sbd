@@ -93,6 +93,10 @@ PORT=3003
 
 #start up nodeman using
 $npm run dev
+-> check if mongo is running with $ps -edaf | grep mongo | grep -v grep
+->service mongod stop
+
+
 ### -----------------------------
 
 ###
